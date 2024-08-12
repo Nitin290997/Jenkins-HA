@@ -1,5 +1,19 @@
-# Jenkins High Availability (HA)
-## Introduction
+<!-- TOC -->
+  * [Jenkins High Availability](#jenkins-high-availability)
+  * [Disadvantages of using a single instance of Jenkins](#disadvantages-of-using-a-single-instance-of-jenkins)
+  * [Design](#design)
+  * [Setting up Guide](#setting-up-guide)
+    * [Pre-requisite](#pre-requisite)
+      * [Prerequisite knowledge](#prerequisite-knowledge)
+      * [Prerequisite setup](#prerequisite-setup)
+    * [Install Jenkins on both the servers](#install-jenkins-on-both-the-servers)
+    * [Install HA Proxy](#install-ha-proxy)
+    * [Configure HAProxy to point to the Jenkins instances](#configure-haproxy-to-point-to-the-jenkins-instances)
+    * [Add a corn job to in Jenkins-2 to Reload](#add-a-corn-job-to-in-jenkins-2-to-reload)
+    * [Access the HAproxy URL from the browser](#access-the-haproxy-url-from-the-browser)
+<!-- TOC -->
+
+## Jenkins High Availability
 Jenkins is a leading tool in the DevOps world, renowned for its role in creating robust pipelines. Its popularity is easy to understand:
 
 It’s open source and free to use.
