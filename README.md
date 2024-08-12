@@ -17,8 +17,7 @@ In this article, we’ll explore strategies to make Jenkins highly available whi
 
 ## Design
 The obvious solution to ensuring Jenkins high availability is to have at least two instances of Jenkins running. Instead of relying on a single instance, which poses a significant risk, we can set up a second Jenkins server to take over if anything happens to the primary one. By utilizing cron jobs to regularly sync Jenkins data between the two servers, we ensure that job-related data is always up-to-date on both instances. This setup provides a seamless transition between servers, keeping your tasks running smoothly even in the event of a failure.
-
-<img src="https://github.com/Jenkins-HA/design.jpg" width="250">
+![design.jpg](design.jpg)
 
 In our Jenkins High Availability (HA) architecture:
 
